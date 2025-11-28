@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember & Vine</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+    <div class="restaurante">
+
+        <header>
+
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png"></a>
+            </div>
+
+            <nav>
+                <div class="navcollapse">
+                    <div id="nav-icon" class="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="menu_on">
+                    <ul class="menu_on_nav">
+                        <li class="item"><a href="index.html" data-toggle="HOME"><span>HOME</span></a></li>
+                        <li class="item"><a href="team.html" data-toggle="TEAM"><span>TEAM</span></a></li>
+                        <li class="item"><a href="index.html"><img src="assets/img/logo.png"></a></li>
+                        <li class="item"><a href="menu.html" data-toggle="MENU"><span>MENU</span></a></li>
+                        <li class="item"><a href="contact.html" data-toggle="CONTACT"><span>CONTACT</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Inicio Menú Persiana MOBILE-->
+        <div class="menu_mobile">
+            <div class="logo-m">
+                <img src="assets/img/logo.png">
+                <p class="brand-m">Ember & Vine</p>
+            </div>
+            <ul id="menu_mobile_nav">
+                <li class="item"><a href="index.html" data-toggle="HOME"><span>HOME</span></a></li>
+                <li class="item"><a href="team.html" data-toggle="TEAM"><span>TEAM</span></a></li>
+                <li class="item"><a href="menu.html" data-toggle="MENU"><span>MENU</span></a></li>
+                <li class="item"><a href="contact.html" data-toggle="CONTACT"><span>CONTACT</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Fin Menú Persiana MOBILE-->
+
+        <div class="hero"></div>
+
+        <section class="reserve">
+            <p class="title">Reserve Delight</p>
+            <div class="form-container">
+                <form class="reservation-form">
+
+                    <div class="row">
+                        <div class="field">
+                            <label for="name">NAME *</label>
+                            <input id="name" type="text" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="surname">SURNAME *</label>
+                            <input id="surname" type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">PHONE *</label>
+                        <input id="phone" type="text" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">EMAIL *</label>
+                        <input id="email" type="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="guests">GUESTS *</label>
+                        <input id="guests" type="number" min="1" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="field">
+                            <label for="date">DATE *</label>
+                            <input id="date" type="date" placeholder="dd/mm/yyyy" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="time">TIME *</label>
+                            <select id="time" required>
+                                <option value="19:00">20:30</option>
+                                <option value="19:30">21:00</option>
+                                <option value="20:00">21:30</option>
+                                <option value="20:30">22:00</option>
+                                <option value="21:00">22:30</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">BOOK NOW</button>
+
+                </form>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <p class="title">Why They Choose Us</p>
+            <div class="row1">
+                <div class="card">
+                    <div class="user">
+                        <div class="picture">
+                            <img src="assets/img/Idyd_Roberto-Dupuis-600.png">
+                        </div>
+                        <div class="info">
+                            <p class="name">Roberto Martín</p>
+                            <div class="stars">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>The tasting menu unfolded with grace and precision. Every course balanced bold flavors and
+                            soft textures. Service felt attentive yet never overly intrusive. A refined evening that
+                            left us eager to return.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="user">
+                        <div class="picture">
+                            <img src="assets/img/foto-perfil-chica.png">
+                        </div>
+                        <div class="info">
+                            <p class="name">Lucía Alvarez</p>
+                            <div class="stars">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_vacia.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>An elegant dining room set the tone for the night. Each plate showed artistry, depth, and
+                            subtle flair. Staff guided us warmly without rushing the meal. A memorable feast that
+                            impressed from start to end.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="card">
+                    <div class="user">
+                        <div class="picture">
+                            <img src="assets/img/Vane.png">
+                        </div>
+                        <div class="info">
+                            <p class="name">Jennifer Maguire</p>
+                            <div class="stars">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/media_estrella.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>Flawless technique elevated even simple ingredients. Portions were modest but intensely
+                            flavorful bites. Sommelier choices paired perfectly with each dish. A stellar experience
+                            worth every single moment.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="user">
+                        <div class="picture">
+                            <img src="assets/img/Sebastian.png">
+                        </div>
+                        <div class="info">
+                            <p class="name">Sebastian Fernandez</p>
+                            <div class="stars">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                                <img src="assets/svg/estrella_rellena.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>From the first amuse-bouche, the magic was clear. Textures, aromas, and colors danced on the
+                            plate. The chef’s vision shone through each delicate step. Truly fine dining that lingers in
+                            the memory.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="local">
+            <p class="title">How To Find Us</p>
+            <div class="local-text">
+                <div class="contain">
+                    <img src="assets/svg/loca.svg">
+                    <p class="text">Ctra. de Murcia, 55, Albaicín, 18010 Granada</p>
+                </div>
+                <div class="contain">
+                    <img src="assets/svg/Call.svg">
+                    <p class="text">(+34) 678 90 12 34</p>
+                </div>
+                <div class="contain">
+                    <img src="assets/svg/Mail.svg">
+                    <p class="text">contact@ember&vine.es</p>
+                </div>
+                <div class="contain">
+                    <img src="assets/svg/Insta.svg">
+                    <img src="assets/svg/Facebook_Icon.svg">
+                    <img src="assets/svg/Twitter_Icon.svg">
+                    <p class="text">@ember&vine</p>
+                </div>
+
+            </div>
+            <div class="local-img"></div>
+        </section>
+
+        <footer>
+            <div class="prin-footer">
+                <div class="left-footer">
+                    <img src="assets/img/logo.png" alt="logo-footer">
+                </div>
+
+                <div class="center-footer">
+                    <p class="title">TAKE A LOOK</p>
+                    <div class="redes">
+                        <img src="assets/svg/Insta.svg">
+                        <img src="assets/svg/Facebook_Icon.svg">
+                        <img src="assets/svg/Twitter_Icon.svg">
+                    </div>
+                    <p class="title">CONTACT</p>
+                    <div class="redes2">
+                        <img src="assets/svg/Call.svg">
+                        <img src="assets/svg/Mail.svg">
+                    </div>
+                </div>
+
+                <div class="right-footer">
+                    <p class="title">PAGES</p>
+                    <p class="pages"><a href="index.html">HOME</a></p>
+                    <p class="pages"><a href="team.html">TEAM</a></p>
+                    <p class="pages"><a href="menu.html">MENU</a></p>
+                    <p class="pages"><a href="contact.html">CONTACT</a></p>
+                </div>
+            </div>
+            <div class="secoundary-footer">
+                <div class="left2">
+                    <p>Legal Terms</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies Policy</p>
+                </div>
+
+                <div class="center2">
+                    <p>Copyrigth 2025 © Ember & Vine</p>
+                </div>
+
+                <div class="right2">
+                    <p>Powered by Javier García Santiago</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/burguer.js"></script>
+
+</body>
+
+</html>
